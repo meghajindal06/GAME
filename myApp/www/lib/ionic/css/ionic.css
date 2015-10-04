@@ -6622,8 +6622,8 @@ progress {
         color: #fff; }
   .button.button-stable {
     border-color: #b2b2b2;
-    background-color: #f8f8f8;
-    color: #444; }
+    background-color: #00acc1;
+    color: #fff; }
     .button.button-stable:hover {
       color: #444;
       text-decoration: none; }
