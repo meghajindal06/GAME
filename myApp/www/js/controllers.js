@@ -9,15 +9,20 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
   
-  $scope.doLogin = function(){
+  $scope.doLogin = function(email , password){
   	
-  	var res = User.authenticate();
+  	var res = User.authenticate(email , password);
   	res.success(function(data, status, headers, config) {
-$ionicLoading.show({ template: 'Logon Successful!', noBackdrop: true, duration: 2000 });
-		});
-		res.error(function(data, status, headers, config) {
-			alert( "failure message: " + JSON.stringify({data: data}));
-		});	
+		if(data.responseCode == 001){
+			$ionicLoading.show({ template: data.responseMessage, noBackdrop: true, duration: 2000 });
+		}else{
+			$ionicLoading.show({ template: 'Logon Successful!', noBackdrop: true, duration: 2000 })	;
+		}
+	});
+	
+	res.error(function(data, status, headers, config) {
+		$ionicLoading.show({ template: 'Logon failed', noBackdrop: true, duration: 2000 });
+	});	
   }
 
 });

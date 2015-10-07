@@ -8,10 +8,10 @@ angular.module('starter.services', []).
 
 	
 return {
-    authenticate : function() {
+    authenticate : function(email , password) {
    var dataObj = {
-				email : "test@abc.com",
-				password : "password",
+				email : email,
+				password : password,
 		}; 
 		
 	/*	var dataObj = $.param({
