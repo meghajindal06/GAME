@@ -2,15 +2,10 @@
   <ion-content>
     <ion-list>
     <p>In here it is possible to get an clear overview of the products; These can be directly added to the list.</p>
-      <ion-item>
-        <h3>Item1</h3>
+      <ion-item ng-repeat='item in items' ng-click='addItemToList(item)'>
+        <h3>{{item.name}}</h3>
       </ion-item>
-      <ion-item>
-        <h3>Item2</h3>
-      </ion-item>
-      <ion-item>
-        <h3>Item3</h3>
-      </ion-item>
+      
     </ion-list>
   </ion-content>
     <div class="bar bar-footer bar-stable">
