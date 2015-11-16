@@ -5,6 +5,7 @@ angular.module('starter.services', []).
   factory('User', function($http) {
 
     var user = {};
+    var itemList = [];
 
 	
 return {
@@ -27,6 +28,18 @@ return {
         headers: {'Content-Type': 'application/json' , 'Accept' : 'application/json'}
       });
       
+    },
+
+    save : function(item){
+        itemList.push(item);
+
+    },
+    remove : function(item){
+        itemList.remove(item);
+
+    }
+    get : function(){
+      return itemList;
     }
 };
     
