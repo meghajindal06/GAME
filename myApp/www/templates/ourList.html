@@ -5,6 +5,17 @@
 		        We have to decide here, when the user clicks on the add button (which will be added later) if he/she will be send to the categories
 		        or directly to the articles section to add the products of their choice.
 	        </p>
+	        <ion-item class="item-remove-animate item-icon-right" ng-repeat='item in myList' >
+        <h3>{{item.name}}</h3>
+        <ion-option-button class="button-assertive" ng-click="remove(item)">
+          Delete
+        </ion-option-button>
+      </ion-item>
     </ion-list>
   </ion-content>
+  <div class="bar bar-footer bar-stable">
+      <a class="btn-floating btn-large waves-effect waves-light red addButton">
+        <i class="material-icons">+</i>
+      </a>
+    </div>
 </ion-view>
