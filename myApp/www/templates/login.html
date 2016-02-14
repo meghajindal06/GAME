@@ -13,14 +13,19 @@
       <label for="filled-in-box">Onthoud mijn gegevens</label>
     </p>
     </div>
-    <div class="row">
-      <div class="col col-33 col-offset-33">
-        <button class="button button-stable" ng-click="doLogin(email , password)">
+    <div class="row responsive-sm">
+      <div class="col">
+        <button class="button button-stable centerButtonsLoginScreen" ng-click="doLogin(email , password)">
           Inloggen
         </button>
-         <div class="col"></div>
       </div>
     </div>
+      <div class="col">
+        <p class="no-account-text centerButtonsLoginScreen">Geen account?</p>
+      </div>
+      <div class="col">
+        <a class="waves-effect waves-teal btn-flat create-account-button centerButtonsLoginScreen">Maak een Account</a>
+      </div>
   </ion-content>
 </ion-view>
 

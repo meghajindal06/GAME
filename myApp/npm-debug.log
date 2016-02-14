@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ios-sim' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'ios-sim', null ]
+5 verbose cache add spec ios-sim
+6 silly cache add parsed spec { raw: 'ios-sim',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'ios-sim',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed ios-sim@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'ios-sim', range: '*', hasData: false }
+11 silly mapToRegistry name ios-sim
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/ios-sim
+15 verbose addNameRange registry:https://registry.npmjs.org/ios-sim not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/ios-sim
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 12:07:33
+19 verbose request id a08126a350eb16b6
+20 http request GET https://registry.npmjs.org/ios-sim
+21 http 200 https://registry.npmjs.org/ios-sim
+22 silly get cb [ 200,
+22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"7MK0V7NOZT35VUEO5ET8MSDNV"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '24029',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Sun, 06 Dec 2015 11:07:34 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '52',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-ams4136-AMS',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1449400054.113742,VS0,VE0',
+22 silly get     vary: 'Accept' } ]
+23 verbose get saving ios-sim to /Users/danielhommersom/.npm/registry.npmjs.org/ios-sim/.cache.json
+24 silly addNameRange number 2 { name: 'ios-sim', range: '*', hasData: true }
+25 silly addNameRange versions [ 'ios-sim',
+25 silly addNameRange   [ '1.8.0',
+25 silly addNameRange     '1.8.1',
+25 silly addNameRange     '1.8.2',
+25 silly addNameRange     '1.9.0',
+25 silly addNameRange     '2.0.0',
+25 silly addNameRange     '2.0.1',
+25 silly addNameRange     '3.0.0',
+25 silly addNameRange     '3.1.0',
+25 silly addNameRange     '3.1.1',
+25 silly addNameRange     '4.1.0',
+25 silly addNameRange     '4.1.1',
+25 silly addNameRange     '3.2.0',
+25 silly addNameRange     '5.0.0',
+25 silly addNameRange     '5.0.1',
+25 silly addNameRange     '5.0.2',
+25 silly addNameRange     '5.0.3',
+25 silly addNameRange     '5.0.4' ] ]
+26 verbose addNamed ios-sim@5.0.4
+27 silly addNamed semver.valid 5.0.4
+28 silly addNamed semver.validRange 5.0.4
+29 silly mapToRegistry name ios-sim
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/ios-sim
+33 verbose addRemoteTarball https://registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz',
+34 verbose addRemoteTarball   'eb386822c9629bdb32e4e355dbb139f113dfe87c' ]
+35 info retry fetch attempt 1 at 12:07:34
+36 info attempt registry request try #1 at 12:07:34
+37 http fetch GET https://registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz
+38 http fetch 200 https://registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz
+39 silly fetchAndShaCheck shasum eb386822c9629bdb32e4e355dbb139f113dfe87c
+40 verbose addTmpTarball /var/folders/5w/7657dl8n4t7095nc4973pfm40000gn/T/npm-7735-8459e523/registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for ios-sim@5.0.4
+42 silly cache afterAdd ios-sim@5.0.4
+43 verbose afterAdd /Users/danielhommersom/.npm/ios-sim/5.0.4/package/package.json not in flight; writing
+44 verbose afterAdd /Users/danielhommersom/.npm/ios-sim/5.0.4/package/package.json written
+45 silly install resolved [ { name: 'ios-sim',
+45 silly install resolved     version: '5.0.4',
+45 silly install resolved     preferGlobal: 'true',
+45 silly install resolved     description: 'launch iOS apps into the iOS Simulator from the command line (Xcode 6.0+)',
+45 silly install resolved     main: 'ios-sim.js',
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/phonegap/ios-sim.git' },
+45 silly install resolved     engines: { node: '>=0.10.0' },
+45 silly install resolved     keywords: [ 'ios-sim', 'iOS Simulator' ],
+45 silly install resolved     bin: { 'ios-sim': './bin/ios-sim' },
+45 silly install resolved     bugs: { url: 'https://github.com/phonegap/ios-sim/issues' },
+45 silly install resolved     author: { name: 'Shazron Abdullah' },
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     dependencies: { simctl: '^0.0.6', nopt: '1.0.9', 'bplist-parser': '^0.0.6' },
+45 silly install resolved     gitHead: '7621763b029661cf0b132dffee481be17f8f230f',
+45 silly install resolved     homepage: 'https://github.com/phonegap/ios-sim#readme',
+45 silly install resolved     _id: 'ios-sim@5.0.4',
+45 silly install resolved     scripts: {},
+45 silly install resolved     _shasum: 'eb386822c9629bdb32e4e355dbb139f113dfe87c',
+45 silly install resolved     _from: 'ios-sim@*',
+45 silly install resolved     _npmVersion: '2.14.7',
+45 silly install resolved     _nodeVersion: '4.2.2',
+45 silly install resolved     _npmUser: { name: 'shazron', email: 'shazron@gmail.com' },
+45 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: 'eb386822c9629bdb32e4e355dbb139f113dfe87c',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/ios-sim/-/ios-sim-5.0.4.tgz' } ]
+46 info install ios-sim@5.0.4 into /usr/local/lib
+47 info installOne ios-sim@5.0.4
+48 verbose installOne of ios-sim to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/danielhommersom/.npm/_locks/ios-sim-3bb56db538048d2f.lock for /usr/local/lib/node_modules/ios-sim
+50 silly install write writing ios-sim 5.0.4 to /usr/local/lib/node_modules/ios-sim
+51 silly cache addNamed cb ios-sim@5.0.4
+52 verbose unbuild lib/node_modules/ios-sim
+53 verbose gentlyRm vacuuming /usr/local/lib/node_modules/ios-sim
+54 verbose tar unpack /Users/danielhommersom/.npm/ios-sim/5.0.4/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/ios-sim
+56 verbose gentlyRm vacuuming /usr/local/lib/node_modules/ios-sim
+57 silly gunzTarPerm modes [ '755', '644' ]
+58 error tar.unpack untar error /Users/danielhommersom/.npm/ios-sim/5.0.4/package.tgz
+59 verbose unlock done using /Users/danielhommersom/.npm/_locks/ios-sim-3bb56db538048d2f.lock for /usr/local/lib/node_modules/ios-sim
+60 verbose fstream_path /usr/local/lib/node_modules/ios-sim
+61 verbose fstream_type Directory
+62 verbose fstream_class DirWriter
+63 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim'
+63 verbose stack     at Error (native)
+64 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+64 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+64 verbose fstream_stack FSReqWrap.oncomplete (fs.js:99:15)
+65 verbose cwd /Users/danielhommersom/Documents/APPLICATIONS/GAME/myApp
+66 error Darwin 14.5.0
+67 error argv "node" "/usr/local/bin/npm" "install" "-g" "ios-sim"
+68 error node v0.12.0
+69 error npm  v2.5.1
+70 error path /usr/local/lib/node_modules/ios-sim
+71 error code EACCES
+72 error errno -13
+73 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim'
+73 error     at Error (native)
+73 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim']
+73 error   errno: -13,
+73 error   code: 'EACCES',
+73 error   path: '/usr/local/lib/node_modules/ios-sim',
+73 error   fstream_type: 'Directory',
+73 error   fstream_path: '/usr/local/lib/node_modules/ios-sim',
+73 error   fstream_class: 'DirWriter',
+73 error   fstream_stack:
+73 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+73 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+73 error      'FSReqWrap.oncomplete (fs.js:99:15)' ] }
+74 error Please try running this command again as root/Administrator.
+75 verbose exit [ -13, true ]
+76 verbose unbuild lib/node_modules/ios-sim
+77 verbose gentlyRm vacuuming /usr/local/lib/node_modules/ios-sim

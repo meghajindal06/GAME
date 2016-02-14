@@ -38,9 +38,9 @@ return {
         itemList.remove(item);
 
     }
-    get : function(){
-      return itemList;
-    }
+    // get : function(){
+    //   return itemList;
+    // }
 };
     
   });

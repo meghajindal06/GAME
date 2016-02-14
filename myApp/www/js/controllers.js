@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($http,$scope, $ionicModal, $timeout , $ionicLoading,User) {
+.controller('AppCtrl', function($http, $scope, $ionicModal, $timeout , $ionicLoading,User) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -9,7 +9,7 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
   
-  $scope.myList = User.get();
+  // $scope.myList = User.get();
 
   var req={
       method : 'GET',
@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 
   }
 
-  $scope.doLogin = function(email , password){
+  $scope.doLogin = function(email , password){debugger;
   	
   	var res = User.authenticate(email , password);
   	res.success(function(data, status, headers, config) {
