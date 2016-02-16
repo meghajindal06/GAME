@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('loginController', [])
 
-.controller('AppCtrl', function($http, $scope, $ionicModal, $timeout , $ionicLoading,User) {
+.controller('loginController', function($http, $scope, $ionicModal, $timeout , $ionicLoading,User) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.

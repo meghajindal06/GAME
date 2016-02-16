@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'loginController', 'articleController', 'categoriesController', 'createAccountController', 'myProfileController', 'ourListController', 'settingsController', 'starter.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -36,6 +36,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'menuContent': {
           templateUrl: 'templates/createAccount.html',
+          controller: 'createAccountController'
         }
       }
     })
@@ -44,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   	views: {
     	'menuContent': {
           templateUrl: 'templates/login.html',
-          controller: 'AppCtrl'
+          controller: 'loginController'
         }
       }
     })
@@ -52,7 +53,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   	url: '/ourList',
   	views: {
     	'menuContent': {
-          templateUrl: 'templates/ourList.html'
+          templateUrl: 'templates/ourList.html',
+          controller: 'ourListController'
         }
       }
     })
@@ -60,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	  url: '/articles',
 	  views: {
 	    'menuContent': {
-	      templateUrl: 'templates/articles.html'
+	      templateUrl: 'templates/articles.html',
+        controller: 'articleController'
 	    }
 	  }
 	})
@@ -68,7 +71,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	  url: '/categories',
 	  views: {
 	    'menuContent': {
-	      templateUrl: 'templates/categories.html'
+	      templateUrl: 'templates/categories.html',
+        controller: 'categoriesController'
 	    }
 	  }
 	})
@@ -76,7 +80,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	  url: '/myProfile',
 	  views: {
 	    'menuContent': {
-	      templateUrl: 'templates/myProfile.html'
+	      templateUrl: 'templates/myProfile.html',
+        controller: 'myProfileController'
 	    }
 	  }
 	})
@@ -84,7 +89,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 	  url: '/settings',
 	  views: {
 	    'menuContent': {
-	      templateUrl: 'templates/settings.html'
+	      templateUrl: 'templates/settings.html',
+        controller: 'settingsController'
 	    }
 	  }
 	});
